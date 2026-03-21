@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BJ30 Comparador | Encontrá la mejor oferta en Argentina</title>
+  <meta name="description" content="Analizamos múltiples opciones del mercado y te recomendamos la mejor oferta de BAIC BJ30 según precio, financiación y disponibilidad. Gratis, inmediato, por WhatsApp." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAV — Sticky, glassmorphism
+  ══════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Principal">
+    <div class="nav-inner container">
+      <a href="#inicio" class="logo" aria-label="BJ30 Comparador — inicio">
+        <span class="logo-icon" aria-hidden="true">◈</span>
+        <span>BJ30<strong>Comparador</strong></span>
+      </a>
+      <a class="btn-wa btn-sm" href="#formulario">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Ver mejor oferta
+      </a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO — Propuesta de valor + Formulario
+  ══════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Asistente inteligente activo — analizamos el mercado en tiempo real
+      </div>
+
+      <h1 class="hero-title">
+        Encontrá la mejor oferta<br>
+        de <span class="gradient-text">BAIC BJ30</span> en Argentina
+      </h1>
+
+      <p class="hero-sub">
+        Analizamos múltiples opciones del mercado y te recomendamos<br class="hide-desktop-down">
+        la mejor según <strong>precio</strong>, <strong>financiación</strong> y <strong>disponibilidad</strong>.
+      </p>
+
+      <div class="price-pill">
+        <span class="price-from">Desde</span>
+        <span class="price-val">USD 33.000 aprox</span>
+        <span class="price-sep">·</span>
+        <span class="price-fin">Financiación disponible</span>
+      </div>
+
+      <div class="hero-trust" role="list" aria-label="Por qué confiar en nosotros">
+        <div class="trust-item" role="listitem">
+          <span class="trust-num">100%</span>
+          <span class="trust-label">Gratis para el comprador</span>
+        </div>
+        <div class="trust-sep" aria-hidden="true"></div>
+        <div class="trust-item" role="listitem">
+          <span class="trust-num">Inmediato</span>
+          <span class="trust-label">Recomendación al instante</span>
+        </div>
+        <div class="trust-sep" aria-hidden="true"></div>
+        <div class="trust-item" role="listitem">
+          <span class="trust-num">Real</span>
+          <span class="trust-label">Precios actualizados del mercado</span>
+        </div>
+      </div>
+
+      <!-- ─── FORMULARIO PRINCIPAL ──────────────────── -->
+      <div class="hero-form-card" id="formulario">
+        <div class="form-header">
+          <span class="form-icon" aria-hidden="true">🎯</span>
+          <div>
+            <strong>Recibí tu mejor opción ahora</strong>
+            <p>El asistente analiza el mercado y te responde por WhatsApp al instante</p>
+          </div>
+        </div>
+
+        <form id="leadForm" novalidate>
+
+          <!-- Fila 1: Nombre + Teléfono -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Tu nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ej: Martín García"
+                autocomplete="given-name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="telefono">WhatsApp</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Ej: 1165432100"
+                autocomplete="tel"
+                required
+                aria-required="true"
+              />
+            </div>
+          </div>
+
+          <!-- Fila 2: Forma de pago + Versión -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tipo_compra">¿Cómo querés comprarlo?</label>
+              <select id="tipo_compra" name="tipo_compra" required aria-required="true">
+                <option value="" disabled selected>Seleccioná una opción</option>
+                <option value="financiado">Financiado en pesos</option>
+                <option value="contado">Contado / dólares</option>
+                <option value="usado_parte_pago">Entrego mi auto como parte de pago</option>
+                <option value="leasing">Leasing / empresa</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="version">Versión de interés</label>
+              <select id="version" name="version">
+                <option value="" disabled selected>Seleccioná una opción</option>
+                <option value="4x2">BJ30 4×2 — desde USD 33.000</option>
+                <option value="4x4">BJ30 4×4 — desde USD 40.000</option>
+                <option value="no_se">No sé todavía, necesito orientación</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- ¿Cuándo querés comprar? -->
+          <div class="form-group form-group-full">
+            <label>¿Cuándo querés comprar?</label>
+            <div class="radio-group" role="radiogroup" aria-label="Momento de compra">
+              <label class="radio-option">
+                <input type="radio" name="momento_compra" value="ahora" required />
+                <span class="radio-label">
+                  <span class="radio-emoji">🔥</span>
+                  <span class="radio-text"><strong>Ahora</strong><small>Quiero cerrar esta semana</small></span>
+                </span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="momento_compra" value="1_3_meses" />
+                <span class="radio-label">
+                  <span class="radio-emoji">📅</span>
+                  <span class="radio-text"><strong>1–3 meses</strong><small>Estoy comparando opciones</small></span>
+                </span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="momento_compra" value="explorando" />
+                <span class="radio-label">
+                  <span class="radio-emoji">🔍</span>
+                  <span class="radio-text"><strong>Explorando</strong><small>Quiero informarme</small></span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div id="formStatus" class="form-status" aria-live="polite" aria-atomic="true"></div>
+
+          <button type="submit" class="btn-wa btn-full" id="submitBtn">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span id="submitText">Recibir mejor opción ahora</span>
+          </button>
+
+          <div class="form-footer-info">
+            <p class="form-urgency">⚡ Las condiciones cambian constantemente según stock y financiación</p>
+            <p class="form-disclaimer">🔒 Tus datos son privados. Solo te contactamos con tu recomendación.</p>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       AUTORIDAD
+  ══════════════════════════════════════ -->
+  <section class="section section-authority" id="autoridad">
+    <div class="container">
+      <div class="authority-inner">
+        <div class="authority-text">
+          <span class="section-tag">Inteligencia de mercado</span>
+          <h2 class="section-title">Analizamos el mercado en tiempo real para detectar la mejor oportunidad</h2>
+          <p class="section-sub" style="text-align:left">
+            Los precios, el stock y las condiciones de financiación cambian todo el tiempo.
+            Nuestro sistema monitorea el mercado continuamente para que vos llegues siempre con la información más actualizada.
+          </p>
+        </div>
+        <div class="authority-stats">
+          <div class="stat-card">
+            <span class="stat-val">Tiempo real</span>
+            <span class="stat-label">Monitoreo del mercado</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-val">0 $</span>
+            <span class="stat-label">Costo para el comprador</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-val">⚡ Inmediato</span>
+            <span class="stat-label">Recomendación por WhatsApp</span>
+          </div>
+          <div class="stat-card stat-highlight">
+            <span class="stat-val">USD 33k+</span>
+            <span class="stat-label">Precio orientativo desde</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CÓMO FUNCIONA
+  ══════════════════════════════════════ -->
+  <section class="section section-light" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Proceso simple</span>
+        <h2 class="section-title">¿Cómo funciona?</h2>
+        <p class="section-sub">En 4 pasos tenés la mejor oferta disponible hoy en tu WhatsApp.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">01</div>
+          <div class="step-icon" aria-hidden="true">📋</div>
+          <h3>Nos decís qué buscás</h3>
+          <p>Completás el formulario con tu nombre, WhatsApp, cómo querés pagar y cuándo pensás comprar. Tarda 30 segundos.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">02</div>
+          <div class="step-icon" aria-hidden="true">🔍</div>
+          <h3>Analizamos múltiples opciones</h3>
+          <p>Nuestro sistema cruza precio, stock disponible, condiciones de financiación y tiempo de entrega del mercado actual.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">03</div>
+          <div class="step-icon" aria-hidden="true">🏆</div>
+          <h3>Recibís la mejor opción</h3>
+          <p>El asistente te envía por WhatsApp la recomendación personalizada con precios reales y condiciones actualizadas.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">04</div>
+          <div class="step-icon" aria-hidden="true">🤝</div>
+          <h3>Avanzás con información</h3>
+          <p>Con la comparativa en mano, sabés exactamente adónde ir y qué negociar. Sin sorpresas, sin presión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       BENEFICIOS
+  ══════════════════════════════════════ -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">¿Por qué usarnos?</span>
+        <h2 class="section-title">Comprás mejor, sin el desgaste</h2>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon bi-blue" aria-hidden="true">⏱️</div>
+          <h3>Ahorrás semanas de investigación</h3>
+          <p>Llegás a la concesionaria ya sabiendo cuál es la mejor opción. Sin recorrer el mercado de punto en punto.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon bi-green" aria-hidden="true">🛡️</div>
+          <h3>Evitás malas decisiones</h3>
+          <p>Detectamos condiciones desfavorables en contratos, demoras de entrega y planes de financiación con letra chica.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon bi-gold" aria-hidden="true">💰</div>
+          <h3>Accedés a mejores condiciones</h3>
+          <p>Al comparar múltiples opciones encontramos precios y planes que no siempre están visibles en la web.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon bi-purple" aria-hidden="true">🤖</div>
+          <h3>Asistente disponible 24/7</h3>
+          <p>Nuestro sistema automatizado responde al instante. Sin esperas, cualquier día a cualquier hora.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon bi-red" aria-hidden="true">🎯</div>
+          <h3>100% independientes</h3>
+          <p>No somos concesionaria. Nuestra única función es darte información real para que tomes la mejor decisión.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon bi-teal" aria-hidden="true">✅</div>
+          <h3>Gratis para el comprador</h3>
+          <p>El análisis y la recomendación son completamente gratuitos para vos. Sin costos ocultos, sin compromisos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ASISTENTE — Chat mockup
+  ══════════════════════════════════════ -->
+  <section class="section section-dark" id="asistente">
+    <div class="container">
+      <div class="assistant-layout">
+
+        <div class="assistant-text">
+          <span class="section-tag tag-light">Asistente inteligente</span>
+          <h2 class="section-title">Automatización que<br>trabaja por vos, 24/7</h2>
+          <p class="section-sub" style="text-align:left">
+            Precios, financiación, stock, versiones: nuestro asistente inteligente procesa
+            toda la información y te da una recomendación inmediata por WhatsApp.
+          </p>
+          <ul class="assistant-features">
+            <li>
+              <span class="af-icon" aria-hidden="true">⚡</span>
+              <span><strong>Respuesta inmediata</strong> — las 24 horas, los 7 días</span>
+            </li>
+            <li>
+              <span class="af-icon" aria-hidden="true">🧠</span>
+              <span><strong>Análisis inteligente</strong> del mercado en tiempo real</span>
+            </li>
+            <li>
+              <span class="af-icon" aria-hidden="true">📊</span>
+              <span><strong>Comparativa personalizada</strong> según tu presupuesto y zona</span>
+            </li>
+            <li>
+              <span class="af-icon" aria-hidden="true">🔄</span>
+              <span><strong>Seguimiento automático</strong> en cada etapa del proceso</span>
+            </li>
+          </ul>
+          <a class="btn-wa" id="waDirectBtn" href="#formulario">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Ver mejor oferta disponible
+          </a>
+        </div>
+
+        <div class="chat-mockup" aria-hidden="true">
+          <div class="chat-header">
+            <div class="chat-avatar">🤖</div>
+            <div>
+              <strong>Asistente BJ30</strong>
+              <span class="online-dot"></span>
+              <small>en línea ahora</small>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="chat-msg msg-in">
+              ¡Hola! Soy el asistente de BJ30Comparador. Analizamos múltiples opciones del mercado por vos. ¿Qué versión te interesa, 4×2 o 4×4?
+            </div>
+            <div class="chat-msg msg-out">
+              La 4×4, pero no sé si conviene financiado o contado...
+            </div>
+            <div class="chat-msg msg-in">
+              Entendido. Estoy analizando las opciones disponibles ahora en el mercado para el 4×4 con financiación. Dame un segundo. 📊
+            </div>
+            <div class="chat-msg msg-out">
+              Sí, mandame lo que encontrás
+            </div>
+            <div class="chat-msg msg-in">
+              ✅ Listo. Te mando la comparativa con precios reales, condiciones y disponibilidad actual. Las condiciones cambian rápido, así que te conviene decidir pronto. 🏆
+            </div>
+            <div class="chat-typing">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="chat-footer">
+            <input type="text" placeholder="Escribí tu consulta..." readonly aria-label="Campo de texto del chat (solo visual)" />
+            <button class="chat-send" aria-hidden="true">↑</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TESTIMONIOS
+  ══════════════════════════════════════ -->
+  <section class="section section-light" id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Resultados reales</span>
+        <h2 class="section-title">Lo que dicen quienes compraron</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testi-card">
+          <div class="testi-stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"Estaba mirando el BJ30 hace meses sin decidirme. El asistente me mandó una comparativa con precios reales. Terminé comprando con una diferencia enorme a favor."</p>
+          <div class="testi-author">
+            <div class="testi-av av-a" aria-hidden="true">L</div>
+            <div>
+              <strong>Lucas M.</strong>
+              <span>Compró BJ30 4×4 · Buenos Aires</span>
+            </div>
+          </div>
+        </article>
+        <article class="testi-card">
+          <div class="testi-stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"El sistema analizó múltiples opciones del mercado y encontró una con entrega inmediata y mejor plan de cuotas que lo que yo había visto. Increíble que sea gratis."</p>
+          <div class="testi-author">
+            <div class="testi-av av-b" aria-hidden="true">V</div>
+            <div>
+              <strong>Valeria R.</strong>
+              <span>Compró BJ30 4×2 · Córdoba</span>
+            </div>
+          </div>
+        </article>
+        <article class="testi-card">
+          <div class="testi-stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"Entregué mi auto usado como parte de pago. El asistente me orientó para encontrar la mejor tasación disponible. Todo por WhatsApp, en minutos."</p>
+          <div class="testi-author">
+            <div class="testi-av av-c" aria-hidden="true">F</div>
+            <div>
+              <strong>Federico T.</strong>
+              <span>Entregó usado · Rosario</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CTA FINAL
+  ══════════════════════════════════════ -->
+  <section class="section cta-section" id="cta">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="container cta-inner">
+      <span class="section-tag tag-light">Gratis · Sin compromiso · Inmediato</span>
+      <h2 class="cta-title">
+        Las condiciones del mercado<br>cambian constantemente
+      </h2>
+      <p class="cta-sub">
+        El precio, el stock y los planes de financiación del BAIC BJ30 varían según la semana.<br>
+        Sabé cuál es la mejor opción <strong>disponible hoy</strong>, antes de que cambie.
+      </p>
+      <a class="btn-wa btn-xl" href="#formulario">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Ver mejor oferta disponible ahora
+      </a>
+      <p class="cta-disclaimer">
+        🔒 Sin spam · Sin costo · Recomendación inmediata por WhatsApp
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="logo" style="margin-bottom:8px;justify-content:center">
+        <span class="logo-icon" aria-hidden="true">◈</span>
+        <span>BJ30<strong>Comparador</strong></span>
+      </div>
+      <p>Plataforma independiente de análisis de mercado para BAIC BJ30 en Argentina.</p>
+      <p class="footer-legal">No somos concesionaria oficial ni representante de BAIC. Los precios son orientativos y pueden variar.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a class="wa-float" id="waFloat" href="#formulario" aria-label="Consultar por WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-float-label">Ver mejor oferta</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
