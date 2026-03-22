@@ -14,7 +14,7 @@
 const CONFIG = {
   SUPABASE_URL: 'https://TU_PROJECT.supabase.co',  // ← REEMPLAZAR
   SUPABASE_KEY: 'TU_ANON_PUBLIC_KEY',              // ← REEMPLAZAR
-  WA_NUMBER:    '5491100000000',                   // ← REEMPLAZAR (sin +)
+  WA_NUMBER:    '5491154668664',                   // ← REEMPLAZAR (sin +)
 };
 
 
